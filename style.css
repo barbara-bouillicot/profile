@@ -1,0 +1,174 @@
+body {
+  font-family: "Courier Prime", monospace;
+  font-weight: 200;
+  line-height: 24px;
+  font-style: normal;
+  background-color: #A9C9FF;
+  background-image: linear-gradient(270deg, #A9C9FF 0%, #FFBBEC 100%);
+  color: rgb(255, 255, 255);
+}
+
+#container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 900px;
+  margin: 40px auto;
+}
+
+.card{
+  background-color: inherit;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+  padding: 40px;
+  margin:60px 100px;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.card:hover{
+  transform: scale(1.10);
+}
+
+#title-handwritting-1{
+  font-family: "Dancing Script", cursive;
+  font-weight: 300;
+}
+
+#title-handwritting-2{
+  font-family: "Dancing Script", cursive;
+  font-weight: 300;
+  font-size: 38px;
+}
+
+h1{
+  font-size: 62px;
+}
+
+h1,h2{
+  font-weight: 300;
+  color:#EB2CF2;
+}
+
+
+
+button{
+  padding:15px;
+  border-radius: 10px;
+  background-color: inherit;
+  border: 2px solid white;
+  transition: 0.3s;
+}
+
+button:hover{
+  background-color:#EB2CF2;
+  border: 2px solid black;
+
+}
+
+button a{
+  color: #EB2CF2;
+}
+
+button a:hover{
+  color: rgb(255, 255, 255)
+}
+
+a{
+  text-decoration: none;
+  cursor:url(http://www.rw-designer.com/cursor-view/106419.png), pointer;
+}
+
+ul{
+  list-style: none;
+}
+
+img{
+  border-radius: 50%;
+  width: 200px;
+  border: 2px solid white;
+}
+
+
+.fa-brands{
+  font-size: 28px;
+  color:2px solid #EB2CF2;
+}
+
+
+.social-icons{
+  width: max-content;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.social-icons ul li i {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: inherit;
+  padding:15px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin:15px;
+  box-shadow: 0 5px 4px rgba(0,0,0,0.5);
+
+}
+
+.social-icons ul li a .fa-brands{
+  color:black;
+  font-size: 30px;
+  padding:20px;
+  transition:color: 0.5s;
+}
+
+
+.social-icons ul li i:hover{
+  transform: translate(0,-10%);
+}
+
+.social-icons ul li .fa-brands:hover{
+  color:white;
+}
+
+.social-icons ul li:nth-child(1) a i:hover{
+  background-color: #0072b1;
+
+}
+.social-icons ul li:nth-child(2) a i:hover{
+  background-color:#6a2255;
+
+}
+.social-icons ul li:nth-child(3) a i:hover{
+  background-color: #C32AA3;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  #container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  #container {
+    width: 500px;
+  }
+  #title-handwritting-1{
+    font-size: 32px;
+}
+  #title-handwritting-2{
+    font-size: 32px;
+}
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  #container {
+    width: 300px;
+  }
+}
